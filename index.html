@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momin Shaik - Student Portfolio</title>
+    <meta name="description" content="Momin Shaik's portfolio - Computer Science student passionate about web development and software engineering">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                Momin<span class="brand-accent">S</span>
+            </div>
+            
+            <div id="nav-menu" class="nav-menu">
+                <button class="nav-link" data-target="#home">
+                    <i data-lucide="home" class="nav-icon"></i>
+                    <span>Home</span>
+                </button>
+                <button class="nav-link" data-target="#about">
+                    <i data-lucide="user" class="nav-icon"></i>
+                    <span>About</span>
+                </button>
+                <button class="nav-link" data-target="#projects">
+                    <i data-lucide="code" class="nav-icon"></i>
+                    <span>Projects</span>
+                </button>
+                <button class="nav-link" data-target="#achievements">
+                    <i data-lucide="award" class="nav-icon"></i>
+                    <span>Achievements</span>
+                </button>
+                <button class="nav-link" data-target="#education">
+                    <i data-lucide="graduation-cap" class="nav-icon"></i>
+                    <span>Education</span>
+                </button>
+                <button class="nav-link" data-target="#contact">
+                    <i data-lucide="mail" class="nav-icon"></i>
+                    <span>Contact</span>
+                </button>
+            </div>
+            
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <i data-lucide="menu" class="menu-icon"></i>
+                <i data-lucide="x" class="close-icon hidden"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-greeting animate-fade-in-up">
+                👋 Hello, I'm shaik Momin
+            </div>
+            
+            <h1 class="hero-title animate-fade-in-up animation-delay-200">
+                Full-Stack Developer with a Passion for AI/ML
+                <span class="hero-title-accent">Student</span>
+            </h1>
+            
+            <p class="hero-subtitle animate-fade-in-up animation-delay-400">
+                Passionate about creating innovative web solutions and building the future of technology
+            </p>
+            
+            <div class="hero-buttons animate-fade-in-up animation-delay-600">
+                <button class="btn btn-primary" data-target="#projects">
+                    <i data-lucide="eye"></i>
+                    View My Work
+                </button>
+                <button class="btn btn-secondary" data-target="#contact">
+                    <i data-lucide="mail"></i>
+                    Get In Touch
+                </button>
+            </div>
+            
+            <div class="hero-social animate-fade-in-up animation-delay-800">
+                <a href="https://github.com/shaik-momin" class="social-link">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/momin-shaik-038503316/" class="social-link">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:mominshaik801@gmail.com" class="social-link">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+            
+            <button class="scroll-indicator animate-fade-in-up animation-delay-1000" data-target="#about">
+                <i data-lucide="arrow-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    About <span class="text-accent">Me</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Get to know the person behind the code
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="assets/img.jpg" alt="Momin Shaik">
+                    </div>
+                    <div class="image-badge">MS</div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-title">Hello! I'm Momin Shaik</h3>
+                    <p class="about-description">
+                        I'm a passionate 4th year Computer Science student at JNTUH with a deep love for creating 
+                        innovative web applications and solving complex problems through code. My journey in technology 
+                        started with curiosity about how things work, and I've been hooked ever since.
+                    </p>
+                    <p class="about-description">
+                        When I'm not coding, you'll find me exploring new technologies, working out at the gym, 
+                        playing sports, or capturing moments through photography. I believe in the power of technology 
+                        to make a positive impact on the world.
+                    </p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i data-lucide="map-pin" class="info-icon"></i>
+                            <div>
+                                <div class="info-label">Location</div>
+                                <div class="info-value">guntur, India</div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i data-lucide="calendar" class="info-icon"></i>
+                            <div>
+                                <div class="info-label">Graduation</div>
+                                <div class="info-value">May 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="languages-card">
+                        <div class="languages-header">
+                            <i data-lucide="globe" class="languages-icon"></i>
+                            <h4>Languages</h4>
+                        </div>
+                        <div class="languages-tags">
+                            <span class="language-tag">Urdu</span>
+                            <span class="language-tag">Telugu</span>
+                            <span class="language-tag">English</span>
+                            <span class="language-tag">Hindi</span>
+                        </div>
+                    </div>
+                    
+                    <div class="interests-card">
+                        <div class="interests-header">
+                            <i data-lucide="heart" class="interests-icon"></i>
+                            <h4>Interests & Hobbies</h4>
+                        </div>
+                        <div class="interests-tags">
+                            <span class="interest-tag">Fitness & Bodybuilding</span>
+                            <span class="interest-tag">Sports</span>
+                            <span class="interest-tag">Photography</span>
+                            <span class="interest-tag">Traveling</span>
+                            <span class="interest-tag">Music</span>
+                            <span class="interest-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    My <span class="text-accent">Skills</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Technologies and tools I've mastered throughout my academic journey
+                </p>
+            </div>
+        
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon purple">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h3>programming language</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">python</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress purple" data-level="88"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon green">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3>Frontend &Backend & Database</h3>
+                    </div>
+                    
+                    <div class="skills-list">
+                
+                            </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-level="92"></div>
+                            </div>
+                            <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">javascript</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-level="85"></div>
+                            </div>
+                        </div>
+                            <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-level="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-level">68%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-level="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon orange">
+                            <i data-lucide="wrench"></i>
+                        </div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tableau</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS</span>
+                                <span class="skill-level">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-level="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="additional-skills">
+                <h4>Additional Skills & Technologies</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">Redux</span>
+                    <span class="skill-tag">Testing (Jest)</span>
+                    <span class="skill-tag">Agile/Scrum</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="text-accent">Projects</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    A showcase of my recent work and personal projects
+                </p>
+            </div>
+            
+            <div class="featured-projects">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://img.freepik.com/premium-vector/food-logo-design-with-leaf-creative-concept-premium-vector_526458-2675.jpg?semt=ais_hybrid&w=740" alt="Attendance and Food Management Portal for Anganwadi Children">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shaik-momin?tab=repositories" class="project-link">
+                                    <i data-lucide="eye"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/shaik-momin?tab=repositories" class="project-link">
+                                    <i data-lucide="github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Attendance and Food Management Portal for Anganwadi Children</h3>
+                        <p class="project-description">
+                            Designed and developed a web-based portal to manage attendance and food distribution for Anganwadi children, ensuring efficient record-keeping and resource allocation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="project-learnings">
+                            <h4>Key Learnings:</h4>
+                            <p>Interaction with local people, analyzing their problems, and solving them.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/shaik-momin?tab=repositories" class="btn btn-primary">
+                                <i data-lucide="external-link"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/shaik-momin?tab=repositories" class="btn btn-outline">
+                                <i data-lucide="github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item reverse">
+                    <div class="project-image">
+                        <img src="https://gloriumtech.com/wp-content/uploads/2021/02/How-AI-Reshapes-The-Healthcare-System-In-The-US.png" alt="HealthAI Assistant">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shaik-momin?tab=repositories" class="project-link">
+                                    <i data-lucide="eye"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/shaik-momin?tab=repositories" class="project-link">
+                                    <i data-lucide="github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">HealthAI Assistant</h3>
+                        <p class="project-description">
+                          Created an AI-powered healthcare assistant using Python, Gradio, and Hugging Face. The system predicts diseases based on symptoms and provides remedies using trained models and real-world health datasets. Integrated IBM Watson services for enhanced conversational responses and analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MLpipelines</span>
+                            <span class="tech-tag">Gradio ui</span>
+                            <span class="tech-tag">Huggingface</span>
+                            <span class="tech-tag">IBM granite</span>
+                        </div>
+                        <div class="project-learnings">
+                            <h4>Key Learnings:</h4>
+                            <p>Working with ML pipelines, using Gradio for real-time interaction, integrating Hugging Face models, and deploying AI assistants with IBM Watson.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/shaik-momin?tab=repositories" class="btn btn-primary">
+                                <i data-lucide="external-link"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/shaik-momin?tab=repositories" class="btn btn-outline">
+                                <i data-lucide="github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="other-projects">
+                <h3>Other Notable Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Personal Portfolio Website">
+                            <div class="card-overlay">
+                                <div class="card-links">
+                                    <a href="https://github.com/shaik-momin?tab=repositories" class="card-link">Demo</a>
+                                    <a href="https://github.com/shaik-momin?tab=repositories" class="card-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Personal Portfolio Website</h4>
+                            <p class="card-description">Designed and developed a personal portfolio to showcase my skills, projects, and contact information. Built using HTML, CSS, and JavaScript with EmailJS integration for contact form handling. Deployed using Netlify for fast, free hosting..</p>
+                            <div class="card-tech">
+                                <span class="tech-tag-small">HTML</span>
+                                <span class="tech-tag-small">CSS</span>
+                                <span class="tech-tag-small">javascript</span>
+                                <span class="tech-tag-more">emailjs</span>
+                            </div>
+                            <div class="project-learnings-small">
+                                <strong>Learning:</strong> HTML structuring, responsive CSS, JavaScript form handling, and deploying static websites with Netlify and EmailJS
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="https://www.kdmevents.co.uk/_cache/is-event-management-503x327.jpg" alt="Event Management System (GDSC Hackathon)">
+                            <div class="card-overlay">
+                                <div class="card-links">
+                                    <a href="https://github.com/shaik-momin?tab=repositories" class="card-link">Demo</a>
+                                    <a href="https://github.com/shaik-momin?tab=repositories" class="card-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Event Management System (GDSC Hackathon)</h4>
+                            <p class="card-description">Developed an event management web application during the GDSC Hackathon to streamline event scheduling, registrations, and participant tracking.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag-small">HTML/CSS</span>
+                                <span class="tech-tag-small">MySql</span>
+                                <span class="tech-tag-small">JS,NODEJS</span>
+                                <span class="tech-tag-more">+1 more</span>
+                            </div>
+                            <div class="project-learnings-small">
+                                <strong>Learning:</strong> Teamworking skills and dealing with industry by participating in competitions
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Heart Disease Prediction">
+                            <div class="card-overlay">
+                                <div class="card-links">
+                                    <a href="https://github.com/shaik-momin?tab=repositories" class="card-link">Demo</a>
+                                    <a href="https://github.com/shaik-momin?tab=repositories" class="card-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Heart Disease Prediction</h4>
+                            <p class="card-description">Built a machine learning model using Python, Scikit-learn, and Matplotlib to predict heart disease from health data. Performed data cleaning, applied classification algorithms, and visualized model performance.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag-small">python</span>
+                                <span class="tech-tag-small">Scikit-learn</span>
+                                <span class="tech-tag-small">matplotlib</span>
+                            </div>
+                            <div class="project-learnings-small">
+                                <strong>Learning:</strong> Data preprocessing, model training, and visualization using Matplotlib
+                                                   </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Achievements & <span class="text-accent">Certifications</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    My professional certifications, academic achievements, and notable accomplishments
+                </p>
+            </div>
+            
+            <div class="achievements-content">
+                <div class="certifications-section">
+                    <h3>Professional Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="cert-card featured">
+                            <div class="cert-image">
+                                <img src="assets/image copy copy.png" alt="Full Stack Developer Bootcamp Certificate">
+                            </div>
+                            <div class="cert-content">
+                                <h3>Full Stack Developer Bootcamp</h3>
+                                <div class="cert-issuer">GeeksforGeeks</div>
+                                <p class="cert-description">
+                                    Comprehensive bootcamp covering modern web development technologies including React, Node.js, MongoDB, and deployment strategies. Gained hands-on experience building full-stack applications.
+                                </p>
+                                <div class="cert-date">
+                                    <i data-lucide="calendar"></i>
+                                    <span>Completed: 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="cert-card">
+                            <div class="cert-image">
+                                <img src="assets\image.png" alt="Gen Ai -AWS">
+                            </div>
+                            <div class="cert-content">
+                                <h3>Generative AI-AWS</h3>
+                                <div class="cert-issuer">AWS</div>
+                                <p class="cert-description">
+                                    Completed the AWS Generative AI Foundations course offered by Amazon Web Services, covering the core concepts of generative AI, including foundation models, responsible AI practices, and the use of AWS tools like Amazon Bedrock and SageMaker to build, deploy, and experiment with GenAI applications.
+                                </p>
+                                <div class="cert-date">
+                                    <i data-lucide="calendar"></i>
+                                    <span>Completed: 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-card">
+                            <div class="cert-image">
+                                <img src="assets/image copy copy copy.png" alt="Data Science with Python Certificate">
+                            </div>
+                            <div class="cert-content">
+                                <h3>Introduction to Data Science with Python</h3>
+                                <div class="cert-issuer">HarvardX</div>
+                                <p class="cert-description">
+                                    Learned fundamental data science concepts, statistical analysis, and Python libraries like Pandas, NumPy, and Matplotlib for data manipulation and visualization.
+                                </p>
+                                <div class="cert-date">
+                                    <i data-lucide="calendar"></i>
+                                    <span>Issued: June 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="cert-card">
+                            <div class="cert-image">
+                                <img src="assets\image copy.png" alt="python certificate">
+                            </div>
+                            <div class="cert-content">
+                                <h3>Python Essentials-cisco</h3>
+                                <div class="cert-issuer">Cisco</div>
+                                <p class="cert-description">
+                                    Completed the Python Essentials course offered by Cisco Networking Academy, focused on fundamental programming concepts using Python. Gained practical skills in writing, testing, and debugging Python programs, with hands-on exercises and projects aligned with industry standards.
+                                </p>
+                                <div class="cert-date">
+                                    <i data-lucide="calendar"></i>
+                                    <span>Completed: Jun 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-card">
+                            <div class="cert-image">
+                                <img src="assets\image copy copy copy copy.png" alt="Cloud Computing Certificate">
+                            </div>
+                            <div class="cert-content">
+                                <h3>Introduction to Cloud Computing</h3>
+                                <div class="cert-issuer">IBM</div>
+                                <p class="cert-description">
+                                    Comprehensive introduction to cloud computing concepts, service models (IaaS, PaaS, SaaS), and major cloud platforms including AWS, Azure, and Google Cloud.
+                                </p>
+                                <div class="cert-date">
+                                    <i data-lucide="calendar"></i>
+                                    <span>Issued: June 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-card">
+                            <div class="cert-image">
+                                <img src="assets\image copy copy copy copy copy.png" alt="Machine Learning Internship Certificate">
+                            </div>
+                            <div class="cert-content">
+                                <h3>Machine Learning Internship</h3>
+                                <div class="cert-issuer">SmartInternz</div>
+                                <p class="cert-description">
+                                    2-month intensive internship focusing on machine learning algorithms, artificial intelligence concepts, and practical implementation using Python and TensorFlow.
+                                </p>
+                                <div class="cert-date">
+                                    <i data-lucide="calendar"></i>
+                                    <span>Completed: July 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="other-achievements">
+                    <h3>Other Notable Achievements</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon academic">
+                                <i data-lucide="trophy"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>AINCAT 2025 - Top 2.5%</h4>
+                                <p>Achieved rank 25,000 out of 10 lakh participants in India's biggest career aptitude test, placing in the top 2.5% nationwide.</p>
+                                <div class="achievement-year">2025</div>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon sports">
+                                <i data-lucide="medal"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>State Level Volleyball Player</h4>
+                                <p>Represented the state in volleyball competitions, demonstrating teamwork, leadership, and athletic excellence.</p>
+                                <div class="achievement-year">2019-2020</div>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon sports">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Badminton Tournament Winner</h4>
+                                <p>Won multiple badminton tournaments at college and district level, showcasing consistent performance and competitive spirit.</p>
+                                <div class="achievement-year">2018-2019</div>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon academic">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>GDSC Hackathon Participant</h4>
+                                <p>Actively participated in Google Developer Student Club hackathons, collaborating on innovative tech solutions.</p>
+                                <div class="achievement-year">2023-2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-summary">
+                    <h3>Workshops & Training</h3>
+                    <div class="competencies-grid">
+                        <div class="competency-item">
+                            <i data-lucide="brain"></i>
+                            <span>AI Workshop by Mr. Sai Satish</span>
+                        </div>
+                        <div class="competency-item">
+                            <i data-lucide="bar-chart"></i>
+                            <span>Tableau (Data Visualization Platform)</span>
+                        </div>
+                        <div class="competency-item">
+                            <i data-lucide="sparkles"></i>
+                            <span>Gen AI Workshop</span>
+                        </div>
+                        <div class="competency-item">
+                            <i data-lucide="code"></i>
+                            <span>LeetCode Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Education & <span class="text-accent">Academic Journey</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    My academic background and educational achievements
+                </p>
+            </div>
+            
+            <div class="education-content">
+                <div class="education-main">
+                    <div class="education-card">
+                        <div class="education-header">
+                            <div style="display: flex; align-items: center;">
+                                <div class="education-icon">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <div class="education-info">
+                                    <h3>Bachelor of Technology in Computer Science</h3>
+                                    <p class="school">seshadri rao gudlavalleru engineering college</p>
+                                    <p class="location">gudlavalleru, India</p>
+                                </div>
+                            </div>
+                            <div class="education-meta">
+                                <div class="period">
+                                    <i data-lucide="calendar"></i>
+                                    <span>2022 - 2026</span>
+                                </div>
+                                <div class="status">4th Year</div>
+                            </div>
+                        </div>
+                        
+                        <div class="gpa-section">
+                            <div class="gpa-card">
+                                <span class="gpa-label">Current CGPA</span>
+                                <span class="gpa-value">8.5/10.0</span>
+                            </div>
+                        </div>
+                        
+                        <div class="coursework-section">
+                            <h4 class="section-title-small">
+                                <i data-lucide="book-open"></i>
+                                <span>Relevant Coursework</span>
+                            </h4>
+                            <div class="coursework-grid">
+                                <div class="course-item">
+                                    <div class="course-dot"></div>
+                                    <span>Data Structures & Algorithms</span>
+                                </div>
+                                <div class="course-item">
+                                    <div class="course-dot"></div>
+                                    <span>Software Engineering</span>
+                                </div>
+                                <div class="course-item">
+                                    <div class="course-dot"></div>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <div class="course-item">
+                                    <div class="course-dot"></div>
+                                    <span>Database Management Systems</span>
+                                </div>
+                                <div class="course-item">
+                                    <div class="course-dot"></div>
+                                    <span>Computer Networks</span>
+                                </div>
+                                <div class="course-item">
+                                    <div class="course-dot"></div>
+                                    <span>Web Technologies</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="achievements-section">
+                            <h4 class="section-title-small">
+                                <i data-lucide="award"></i>
+                                <span>Academic Achievements</span>
+                            </h4>
+                            <div class="achievements-list">
+                                <div class="achievement-item">
+                                    <div class="achievement-dot"></div>
+                                    <span>Consistent Academic Performance</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-dot"></div>
+                                    <span>Active in Technical Clubs</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-dot"></div>
+                                    <span>Project Excellence Awards</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card secondary-education">
+                        <div class="education-header">
+                            <div style="display: flex; align-items: center;">
+                                <div class="education-icon secondary">
+                                    <i data-lucide="school"></i>
+                                </div>
+                                <div class="education-info">
+                                    <h3>Intermediate (12th Grade)</h3>
+                                    <p class="school">Sri vivekananda vidyanikethan junior college</p>
+                                    <p class="location">AndhraPradesh, India</p>
+                                </div>
+                            </div>
+                            <div class="education-meta">
+                                <div class="period">
+                                    <i data-lucide="calendar"></i>
+                                    <span>2020 - 2022</span>
+                                </div>
+                                <div class="status completed">Completed</div>
+                            </div>
+                        </div>
+                        
+                        <div class="gpa-section">
+                            <div class="gpa-card">
+                                <span class="gpa-label">Percentage</span>
+                                <span class="gpa-value">89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications-sidebar">
+                    <h3>Quick Stats</h3>
+                    
+                    <div class="stats-card">
+                        <h4>Academic Performance</h4>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label">Current Year</span>
+                                <span class="stat-value">4th Year</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">CGPA</span>
+                                <span class="stat-value">8.5/10.0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Graduation</span>
+                                <span class="stat-value">May 2026</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Certifications</span>
+                                <span class="stat-value">9+ Earned</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Latest Achievement</h4>
+                                <p>AINCAT 2025 - Top 2.5%</p>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <div class="cert-date">
+                                <i data-lucide="calendar"></i>
+                                <span>Achieved: 2025</span>
+                            </div>
+                            <p class="cert-id">Rank: 25,000/10,00,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get In <span class="text-accent">Touch</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            Whether you have a project in mind, want to collaborate, or just want to say hello, 
+                            I'd love to hear from you. Drop me a message and I'll get back to you as soon as possible!
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:mominshaik801@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">mominshaik801@gmail.com</div>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+919581102031" class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+91 9581102031</div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://maps.google.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Guntur, India</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/shaik-momin" class="social-link github">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/momin-shaik-038503316/" class="social-link linkedin">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://x.com/Mohee__77" class="social-link twitter">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send me a message</h3>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Let's discuss a project">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell me about your project or just say hello!"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        Momin<span class="brand-accent">S</span>
+                    </div>
+                    <p class="footer-description">
+                        AI & ML student passionate about creating innovative solutions 
+                        and contributing to the future of technology.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <button class="footer-link" data-target="#about">About</button>
+                        <button class="footer-link" data-target="#projects">Projects</button>
+                        <button class="footer-link" data-target="#achievements">Achievements</button>
+                        <button class="footer-link" data-target="#education">Education</button>
+                        <button class="footer-link" data-target="#contact">Contact</button>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact">
+                        <p>Guntur, India</p>
+                        <p>mominshaik801@gmail.com</p>
+                        <p>+91 9581102031</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>© 2024 Momin Shaik. Made with</span>
+                    <i data-lucide="heart" class="heart-icon"></i>
+                    <span>and</span>
+                    <i data-lucide="code" class="code-icon"></i>
+                    <span>and lots of</span>
+                    <i data-lucide="coffee" class="coffee-icon"></i>
+                </div>
+                
+                <button id="back-to-top" class="back-to-top">
+                    Back to Top
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
